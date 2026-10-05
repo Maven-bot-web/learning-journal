@@ -65,3 +65,7 @@ resources/    常用命令、清单和参考资料
 ## 参考项目
 
 参考项目与使用方式见：REFERENCE_PROJECTS.md`n
+
+## 执行模式
+
+学习闭环见：EXECUTION_MODEL.md`n
