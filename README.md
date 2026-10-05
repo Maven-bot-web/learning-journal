@@ -1,49 +1,50 @@
-# Learning Journal
+# 学习日志
 
-This repository records my transition into Linux, operations, automation, networking, and cloud security.
+这个仓库用来记录我从 Linux 基础、运维、自动化、网络到云安全方向的学习过程。
 
-It is not only a notebook. It is a public evidence trail of what I studied, what I practiced, what broke, and how I fixed it.
+它不只是笔记本，更是一条可以回看的学习证据链：我学了什么、做了什么、哪里出错、最后怎么解决。
 
-## Current Focus
+## 当前阶段
 
-Phase 1: Linux fundamentals and basic operations.
+第一阶段：Linux 基础和基础运维能力。
 
-The first milestone is to become comfortable inspecting a Linux machine:
+当前目标是：拿到一台 Linux 机器后，能独立完成一次基础体检。
 
-- Identify the operating system and kernel
-- Check disk and memory usage
-- Understand IP address, route, and gateway
-- Inspect processes and listening ports
-- Write small Bash scripts to automate routine checks
+- 判断系统版本和内核信息
+- 查看磁盘和内存使用情况
+- 理解 IP 地址、路由和默认网关
+- 查看正在运行的进程
+- 查看正在监听的端口
+- 用 Bash 脚本自动化常见检查
 
-## Repository Map
+## 目录说明
 
 ```text
-daily/        Daily learning logs
-notes/        Cleaned-up knowledge notes
-labs/         Hands-on lab records
-scripts/      Small scripts created during learning
-resources/    Useful commands, references, and checklists
+daily/        每日学习记录
+notes/        整理后的知识笔记
+labs/         动手实验记录
+scripts/      学习过程中写的小脚本
+resources/    常用命令、清单和参考资料
 ```
 
-## How I Use This Repo
+## 使用方式
 
-Every learning session should leave a small trace:
+每次学习结束后，至少留下一点记录：
 
-1. Write what I did in `daily/`
-2. Turn important concepts into notes under `notes/`
-3. Record hands-on experiments under `labs/`
-4. Keep reusable scripts under `scripts/`
-5. Commit changes with a clear message
+1. 在 `daily/` 里写今天做了什么
+2. 把重要概念整理到 `notes/`
+3. 把动手实验记录到 `labs/`
+4. 把可复用的小脚本放到 `scripts/`
+5. 用清晰的提交信息提交到 Git
 
-## First Milestone
+## 第一个里程碑
 
-Build a basic Linux health check workflow using Debian WSL2.
+基于 Debian WSL2，完成一套最基础的 Linux 体检流程。
 
-Related files:
+相关文件：
 
 - `notes/linux/01-system-overview.md`
 - `notes/linux/02-disk-and-memory.md`
 - `notes/linux/03-processes-and-ports.md`
 - `labs/linux-health-check/README.md`
-- `scripts/health_check.sh`
+- `scripts/README.md`

@@ -1,5 +1,5 @@
-# Scripts
+# 脚本目录
 
-This folder can hold small scripts created during learning.
+这个目录可以放学习过程中写的小脚本。
 
-Larger or reusable tools should live in a separate project repository, such as `~/infra-ops-lab`.
+如果某个脚本变成了更完整、可复用的小工具，就应该放到独立项目仓库里，比如 `~/infra-ops-lab`。

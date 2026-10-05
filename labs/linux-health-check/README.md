@@ -1,16 +1,16 @@
-# Lab: Linux Health Check
+# 实验：Linux 基础体检
 
-## Goal
+## 目标
 
-Build the habit of inspecting a Linux machine from several basic angles.
+建立进入一台 Linux 机器后的基础检查习惯。
 
-## Environment
+## 环境
 
 - Debian WSL2
-- User: `mwf`
-- Related project repository: `~/infra-ops-lab`
+- 用户：`mwf`
+- 相关项目仓库：`~/infra-ops-lab`
 
-## Commands
+## 手动检查命令
 
 ```bash
 cat /etc/os-release
@@ -21,25 +21,25 @@ ps -ef | head
 ss -lntp
 ```
 
-## What I Am Checking
+## 检查内容
 
 ```text
-OS and kernel
-IP address and route
-Disk usage
-Memory usage
-Running processes
-Listening ports
+系统版本和内核
+IP 地址和路由
+磁盘使用情况
+内存使用情况
+正在运行的进程
+正在监听的端口
 ```
 
-## Result
+## 实验结果
 
-The first `health_check.sh` script was created in `~/infra-ops-lab`.
+第一个 `health_check.sh` 已经创建在 `~/infra-ops-lab`。
 
-This lab explains the thinking behind that script. The script itself belongs in the project repository, while this journal records what I learned from it.
+这个实验记录用来解释脚本背后的检查思路。脚本本身放在项目仓库里，学习过程和理解记录在这里。
 
-## Follow-Up
+## 后续改进
 
-- Add notes explaining each command.
-- Run the script again after adding more checks.
-- Compare manual command output with script output.
+- 补充每条命令的解释。
+- 再次运行脚本并记录输出。
+- 对比手动命令输出和脚本输出。

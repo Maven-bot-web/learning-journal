@@ -1,42 +1,42 @@
-# Disk And Memory
+# 磁盘和内存
 
-Disk and memory checks answer a simple question: does the machine have enough room and resources to work normally?
+磁盘和内存检查回答的是一个很基础的问题：这台机器现在资源够不够用。
 
-## Disk
+## 查看磁盘
 
 ```bash
 df -h
 df -hT
 ```
 
-Important columns:
+重点字段：
 
 ```text
-Filesystem   The disk or virtual filesystem
-Size         Total size
-Used         Used space
-Avail        Available space
-Use%         Usage percentage
-Mounted on   Where it is attached in the Linux filesystem
+Filesystem   文件系统或磁盘来源
+Size         总大小
+Used         已使用空间
+Avail        可用空间
+Use%         使用率
+Mounted on   挂载位置
 ```
 
-In WSL2, the Linux root filesystem may appear as a large virtual disk. This does not always mean Windows has already used that much physical disk space.
+在 WSL2 里，Linux 根目录所在的虚拟磁盘可能显示得很大。这不代表 Windows 已经真的占用了这么多空间，而是虚拟磁盘的上限。
 
-## Memory
+## 查看内存
 
 ```bash
 free -m
 free -h
 ```
 
-Important columns:
+重点字段：
 
 ```text
-total       Total memory visible to Linux
-used        Memory currently used
-free        Completely unused memory
-buff/cache  Memory used for cache
-available   Memory likely available for applications
+total       Linux 能看到的总内存
+used        已使用内存
+free        完全空闲内存
+buff/cache  用作缓存的内存
+available   大致还能给程序使用的内存
 ```
 
-For daily checks, `available` is usually more useful than `free`.
+日常判断内存是否紧张时，`available` 通常比 `free` 更有参考价值。

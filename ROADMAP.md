@@ -1,104 +1,104 @@
-# Roadmap
+# 学习路线
 
-## Phase 1 - Linux Fundamentals
+## 第一阶段：Linux 基础
 
-Goal: become comfortable operating inside Debian WSL2 and reading basic system state.
+目标：熟悉 Debian WSL2 环境，能看懂一台 Linux 机器的基本状态。
 
-Topics:
+学习内容：
 
-- Filesystem layout
-- Users and permissions
-- Disk and memory inspection
-- Process inspection
-- Network address and route inspection
-- Listening ports
-- Basic Bash scripting
-- Git workflow inside Linux
+- 文件系统结构
+- 用户和权限
+- 磁盘和内存检查
+- 进程检查
+- IP、路由和网关检查
+- 监听端口检查
+- 基础 Bash 脚本
+- Linux 环境里的 Git 工作流
 
-Deliverables:
+产出：
 
-- Linux command notes
-- Daily learning logs
+- Linux 常用命令笔记
+- 每日学习日志
 - `health_check.sh`
-- Linux health check lab
+- Linux 体检实验记录
 
-## Phase 2 - Git, Bash, And Workflow
+## 第二阶段：Git、Bash 和工作流
 
-Goal: build repeatable command-line habits.
+目标：建立稳定的命令行操作习惯。
 
-Topics:
+学习内容：
 
-- Git status, add, commit, log, diff
-- Branch basics
-- Bash variables
-- Conditions
-- Loops
-- Functions
-- Script arguments
-- Exit codes
+- `git status`、`git add`、`git commit`、`git log`、`git diff`
+- 分支基础
+- Bash 变量
+- 条件判断
+- 循环
+- 函数
+- 脚本参数
+- 退出码
 
-Deliverables:
+产出：
 
-- Git workflow notes
-- Bash practice scripts
-- Script debugging notes
+- Git 工作流笔记
+- Bash 练习脚本
+- 脚本排错记录
 
-## Phase 3 - Networking Basics
+## 第三阶段：网络基础
 
-Goal: understand local networking well enough to explain what WSL2 is doing.
+目标：理解本机网络和 WSL2 网络的基本工作方式。
 
-Topics:
+学习内容：
 
-- IP address and subnet
-- Default gateway
+- IP 地址和子网
+- 默认网关
 - NAT
 - DNS
-- TCP and UDP
-- Ports
-- HTTP and HTTPS
-- Basic packet flow
+- TCP 和 UDP
+- 端口
+- HTTP 和 HTTPS
+- 基础数据包流向
 
-Deliverables:
+产出：
 
-- WSL2 network map
-- Notes on `ip`, `ss`, `curl`, and DNS commands
-- Small network diagnostic lab
+- WSL2 网络结构图
+- `ip`、`ss`、`curl`、DNS 相关命令笔记
+- 小型网络诊断实验
 
-## Phase 4 - Python Automation
+## 第四阶段：Python 自动化
 
-Goal: use Python to automate small operations tasks.
+目标：用 Python 自动化一些小型运维任务。
 
-Topics:
+学习内容：
 
-- Virtual environments
-- File reading and writing
+- 虚拟环境
+- 文件读写
 - JSON
-- argparse
-- subprocess
-- logging
-- Error handling
+- `argparse`
+- `subprocess`
+- 日志记录
+- 异常处理
 
-Deliverables:
+产出：
 
-- Python notes
-- Small log parser
-- Simple report generator
+- Python 笔记
+- 简单日志分析脚本
+- 简单系统报告生成器
 
-## Phase 5 - Cloud Foundations
+## 第五阶段：云计算基础
 
-Goal: connect Linux and networking knowledge to cloud concepts.
+目标：把 Linux 和网络知识连接到云计算场景。
 
-Topics:
+学习内容：
 
-- Cloud compute
-- Storage
-- IAM basics
-- VPC basics
-- Security groups
-- Logging and monitoring
+- 云服务器
+- 云存储
+- IAM 基础
+- VPC 基础
+- 安全组
+- 日志和监控
 
-Deliverables:
+产出：
 
-- Cloud concept notes
-- Simple cloud architecture diagrams
-- First small cloud lab record
+- 云计算概念笔记
+- 简单云架构图
+- 第一个云实验记录

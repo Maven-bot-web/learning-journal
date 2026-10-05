@@ -1,27 +1,30 @@
-# Git Basic Workflow
+# Git 基础工作流
 
-Git records changes over time.
+Git 用来记录文件的变化历史。学习过程中，我需要养成小步提交的习惯。
 
-## Daily Commands
+## 日常命令
 
 ```bash
 git status
 git add .
-git commit -m "docs: add linux notes"
+git commit -m "docs: update linux notes"
 git log --oneline
 git diff
+git push
 ```
 
-## Basic Flow
+## 基本流程
 
 ```text
-edit files
-check status
-stage changes
-commit changes
-review history
+修改文件
+查看状态
+git add 暂存
+git commit 提交
+git push 推送到 GitHub
 ```
 
-## First Rule
+## 第一原则
 
-Run `git status` often. It tells you where you are before you act.
+多运行 `git status`。
+
+它能告诉我当前仓库处在什么状态，避免在不清楚的情况下乱操作。

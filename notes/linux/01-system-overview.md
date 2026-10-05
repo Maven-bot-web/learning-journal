@@ -1,8 +1,8 @@
-# Linux System Overview
+# Linux 系统概览
 
-When entering a Linux machine for the first time, start by identifying what the system is.
+进入一台 Linux 机器后，第一步不是急着操作，而是先判断这台机器是什么环境。
 
-## Useful Commands
+## 常用命令
 
 ```bash
 cat /etc/os-release
@@ -11,24 +11,26 @@ hostname
 uptime
 ```
 
-## What To Look For
+## 命令作用
 
-`cat /etc/os-release` shows the Linux distribution.
+`cat /etc/os-release` 用来查看 Linux 发行版信息。
 
-`uname -a` shows kernel information.
+`uname -a` 用来查看内核和系统架构信息。
 
-`hostname` shows the machine name.
+`hostname` 用来查看机器名。
 
-`uptime` shows how long the system has been running and gives a quick load average.
+`uptime` 用来查看系统运行时间和负载。
 
-## Current Mental Model
+## 我的理解
 
-A Linux machine can be inspected from several angles:
+一台 Linux 机器可以从几个角度体检：
 
 ```text
-system -> os, kernel, hostname, uptime
-storage -> disks and mounts
-memory -> used and available memory
-network -> IP address, route, gateway, ports
-processes -> what programs are running
+系统：操作系统、内核、主机名、运行时间
+存储：磁盘、挂载点、剩余空间
+内存：总量、已用、可用
+网络：IP、路由、网关、端口
+进程：当前跑了哪些程序
 ```
+
+先建立整体视角，再进入细节。

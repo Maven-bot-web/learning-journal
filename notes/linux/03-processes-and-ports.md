@@ -1,36 +1,36 @@
-# Processes And Ports
+# 进程和端口
 
-Processes show what is running. Ports show what is listening for network connections.
+进程说明这台机器正在运行什么程序。端口说明这台机器正在对外或对内监听什么服务。
 
-## Processes
+## 查看进程
 
 ```bash
 ps -ef
 ps -ef | head
 ```
 
-Important columns:
+重点字段：
 
 ```text
-UID    User running the process
-PID    Process ID
-PPID   Parent process ID
-CMD    Command that started the process
+UID    运行该进程的用户
+PID    进程 ID
+PPID   父进程 ID
+CMD    启动该进程的命令
 ```
 
-## Listening TCP Ports
+## 查看监听端口
 
 ```bash
 ss -lntp
 ```
 
-Common options:
+常用参数：
 
 ```text
--l  listening sockets
--n  numeric addresses and ports
--t  TCP sockets
--p  process information
+-l  只看监听状态
+-n  以数字显示地址和端口
+-t  只看 TCP
+-p  显示对应进程
 ```
 
-This command helps answer: what network services are open on this machine?
+这个命令可以帮助我判断：这台机器现在开了哪些网络服务。
