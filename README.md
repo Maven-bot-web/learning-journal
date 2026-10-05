@@ -56,3 +56,12 @@ resources/    常用命令、清单和参考资料
 ## 项目分工与学习主线
 
 详细说明见：PROJECTS_AND_LEARNING.md`n
+
+## 12 个月规划与前 90 天计划
+
+长期规划见：YEAR_PLAN.md`n
+前 90 天执行计划见：FIRST_90_DAYS.md`n
+
+## 参考项目
+
+参考项目与使用方式见：REFERENCE_PROJECTS.md`n
