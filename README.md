@@ -48,3 +48,7 @@ resources/    常用命令、清单和参考资料
 - `notes/linux/03-processes-and-ports.md`
 - `labs/linux-health-check/README.md`
 - `scripts/README.md`
+
+## 完整学习路径
+
+详细路线见：LEARNING_PATH.md`n
