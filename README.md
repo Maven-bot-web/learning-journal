@@ -52,3 +52,7 @@ resources/    常用命令、清单和参考资料
 ## 完整学习路径
 
 详细路线见：LEARNING_PATH.md`n
+
+## 项目分工与学习主线
+
+详细说明见：PROJECTS_AND_LEARNING.md`n
