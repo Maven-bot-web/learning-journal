@@ -69,3 +69,7 @@ resources/    常用命令、清单和参考资料
 ## 执行模式
 
 学习闭环见：EXECUTION_MODEL.md`n
+
+## 复习计划
+
+复习机制见：REVIEW_PLAN.md`n
