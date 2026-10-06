@@ -1,104 +1,148 @@
-# 学习路线
+# Roadmap
 
-## 第一阶段：Linux 基础
+当前路线只保留一个重点：前 12 周把基础工程能力跑通。
 
-目标：熟悉 Debian WSL2 环境，能看懂一台 Linux 机器的基本状态。
+Kubernetes、Terraform、RAG、Agent 等内容放到后续阶段，不提前抢主线。
 
-学习内容：
+## Phase 0 — Environment
 
-- 文件系统结构
-- 用户和权限
-- 磁盘和内存检查
-- 进程检查
-- IP、路由和网关检查
-- 监听端口检查
-- 基础 Bash 脚本
-- Linux 环境里的 Git 工作流
+状态：已完成。
 
-产出：
+已具备：
 
-- Linux 常用命令笔记
-- 每日学习日志
-- `health_check.sh`
-- Linux 体检实验记录
+- Windows + WSL2 + Debian
+- Git / GitHub
+- Python / pip / venv
+- Shell 基础环境
+- `learning-journal` 已推送到 GitHub
+- `infra-ops-lab` 已有 `health_check.sh` 初版
 
-## 第二阶段：Git、Bash 和工作流
+## Week 1 — Linux + Git
 
-目标：建立稳定的命令行操作习惯。
-
-学习内容：
-
-- `git status`、`git add`、`git commit`、`git log`、`git diff`
-- 分支基础
-- Bash 变量
-- 条件判断
-- 循环
-- 函数
-- 脚本参数
-- 退出码
+目标：能在 Linux 中完成基础检查，并用 Git 管理修改。
 
 产出：
 
-- Git 工作流笔记
-- Bash 练习脚本
-- 脚本排错记录
+- `infra-ops-lab` README 初版或优化版
+- 确认 `health_check.sh` 当前输出
+- 第一份周复盘
 
-## 第三阶段：网络基础
+验收：
 
-目标：理解本机网络和 WSL2 网络的基本工作方式。
+- 能解释 `df`、`free`、`ps`、`ss`、`ip route`
+- 能完成 `git add / commit / push`
 
-学习内容：
+## Week 2 — Shell + System Health Checking
 
-- IP 地址和子网
-- 默认网关
-- NAT
-- DNS
-- TCP 和 UDP
-- 端口
-- HTTP 和 HTTPS
-- 基础数据包流向
+目标：把系统检查脚本做得更可靠。
 
 产出：
 
-- WSL2 网络结构图
-- `ip`、`ss`、`curl`、DNS 相关命令笔记
-- 小型网络诊断实验
+- 升级 `health_check.sh`
+- 增加清晰输出
+- 增加基础错误处理
 
-## 第四阶段：Python 自动化
+## Week 3 — Python + system_check
 
-目标：用 Python 自动化一些小型运维任务。
-
-学习内容：
-
-- 虚拟环境
-- 文件读写
-- JSON
-- `argparse`
-- `subprocess`
-- 日志记录
-- 异常处理
+目标：用 Python 复现部分系统检查能力。
 
 产出：
 
-- Python 笔记
-- 简单日志分析脚本
-- 简单系统报告生成器
+- `src/system_check.py`
+- 结构化输出雏形
 
-## 第五阶段：云计算基础
+## Week 4 — Files / JSON / Logging + log_parser
 
-目标：把 Linux 和网络知识连接到云计算场景。
-
-学习内容：
-
-- 云服务器
-- 云存储
-- IAM 基础
-- VPC 基础
-- 安全组
-- 日志和监控
+目标：读取日志，解析错误，输出结构化结果。
 
 产出：
 
-- 云计算概念笔记
-- 简单云架构图
-- 第一个云实验记录
+- `src/log_parser.py`
+- 示例日志
+- JSON / CSV 输出
+
+## Week 5 — HTTP / API + api_checker
+
+目标：用 Python 检查 HTTP 服务可用性。
+
+产出：
+
+- `src/api_checker.py`
+- 超时、异常、状态码处理
+
+## Week 6 — Testing + Refactoring
+
+目标：让项目可测试、可维护。
+
+产出：
+
+- `tests/`
+- 基础测试用例
+- 更清晰的项目结构
+
+## Week 7 — Docker
+
+目标：把工具放进容器运行。
+
+产出：
+
+- `Dockerfile`
+- Docker 运行说明
+
+## Week 8 — Docker Compose
+
+目标：用 Compose 管理多个服务。
+
+产出：
+
+- `compose.yaml`
+- 服务编排说明
+
+## Week 9 — Nginx / Reverse Proxy / Service Networking
+
+目标：理解服务网络和反向代理。
+
+产出：
+
+- `nginx/`
+- 服务访问与排障记录
+
+## Week 10 — CI Pipeline
+
+目标：GitHub push 后自动检查项目。
+
+产出：
+
+- `.github/workflows/ci.yml`
+- 自动测试或脚本检查
+
+## Week 11 — Failure Injection + Troubleshooting
+
+目标：主动制造故障并记录排障过程。
+
+产出：
+
+- `docs/troubleshooting.md`
+- 至少 3 个故障案例
+
+## Week 12 — AI Incident Summary
+
+目标：把 AI 接入已有工程流程，生成结构化事故摘要。
+
+产出：
+
+- `src/ai_incident_summary.py`
+- 输入日志或故障文本
+- 输出现象、可能原因、建议检查项
+
+## Next Stage
+
+12 周后再进入：
+
+```text
+Observability：Prometheus / Grafana
+Kubernetes
+Cloud
+Terraform
+AI Engineering：RAG / Tool Calling / Agent
+```
