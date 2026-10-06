@@ -73,3 +73,7 @@ resources/    常用命令、清单和参考资料
 ## 复习计划
 
 复习机制见：REVIEW_PLAN.md`n
+
+## 复习机制参考项目
+
+开源参考与取舍见：REVIEW_REFERENCES.md`n
